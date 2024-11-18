@@ -10,7 +10,6 @@ FROM food_prices_ind;
 SELECT count(DISTINCT admin1) as state
 FROM food_prices_ind
 WHERE admin1 is not null;
-
 -- Q3. How to find out the states which have had the highest prices of Rice under cereals and tubers category - Retail purchases
 
 SELECT admin1 as state,market,category,commodity,pricetype,max(price) as mprice
