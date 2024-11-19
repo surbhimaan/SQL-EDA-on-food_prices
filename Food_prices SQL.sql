@@ -199,7 +199,7 @@ Create view commodity_prices as
 Select fo.date,zo.City,zo.State,fo.market,zo.zone,fo.latitude,fo.longitude,fo.category,fo.commodity,fo.unit,fo.priceflag,fo.pricetype,fo.currency,fo.price,fo.usdprice
 from zones zo
 JOIN food_prices_ind fo
-WHERE zo.State = fo.admin1;
+ON zo.State = fo.admin1;
 
 select DISTINCT market
 from commodity_prices;
